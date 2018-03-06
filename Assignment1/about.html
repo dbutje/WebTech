@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Resources/css/style.css">
+        <link rel="stylesheet" href="Resources/css/ionicons.min.css">
+        <title>Gallerie</title>
+        <script src="Resources/js/jquery-3.3.1.js"></script>
+        <script src="Resources/js/slideshow.js"></script>
+    </head>
+
+    <body>
+        <header class="nav-header">
+            <a href="index.html" class="logo-img"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo-small-scroll"></a>
+            <div class="row">
+                <ul class="scroll-nav-ul">
+                    <li><a href="index.html#how-it-works">How it works</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="nav-buffer"></div>
+        
+        <section id="slideshow">
+            <div class="slideshow-container row">
+                <div class="slide fade">
+                    <img src="/Resources/img/photographer.jpg" alt="Picture of a photographer" id="img-1">  
+                </div>
+                <div class="slide fade">
+                    <img src="/Resources/img/photographer2.jpg" alt="Picture of a photographer" id="img-1">  
+                </div>
+
+                <a class="prev" onclick="nextSlide(-1)" id="prev">&#10094;</a>
+                <a class="next" onclick="nextSlide(1)" id="next">&#10095;</a>
+            </div>
+            <div class="text-center-align">
+                <span class="circle" onclick="currentSlide(1)"></span>
+                <span class="circle" onclick="currentSlide(2)"></span>
+                <span class="circle" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        
+        <section class="about">
+            <div class="row text-box about-info">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        Hi, welcome to our website. We are ButjePhotos, a young company with a lot of great photographers. In 2017 we, Anwoud Supèr and Daan Butje, wanted to have our picture taken by a professional photographer. The companies we went to all did ask a lot of money for some simple pictures(the quality was not worth the money). So we thought that there should be a better option if someone wants to take their pictures taken. We rented a studio to take pictures of persons in that building. People were excited about the results and quality of our pictures and we were invited to a wedding to take the wedding pictures there. This was the start of the company we are now, since that moment we also shoot outside our studio and have 10 great photographers who have the same urge to deliver quality as we have. We always make sure the customer is happy, so we will ask you before you come to us what your needs are. This way we can really give the best experience to everyone and we can joyfully say that we have never had a customer that wasn’t happy with what we delivered. We want everyone to have beautiful pictures of themselves and the things they love in their lives. Everyone here wants to give you an unforgettable day and we give you the pictures as proof of it. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col col-1-5">
+                        <a href="index.html"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo-small"></a>
+                </div>
+                <div class="col col-3-5">
+                    <ul>
+                        <li><a href="gallerie.html">Gallerie</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#how-it-works">How it works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col col-1-5">
+                    <ul class="scale-up-1-3">
+                        <li><a href="#" id="twitter"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#" id="facebook"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" id="linkedin"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="#" id="insta"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#" id="youtube"><i class="ion-social-youtube"></i></a></li>
+                        <li><a href="#"><i class="ion-email"></i></a></li>
+                        <li><a href="#"><i class="ion-ios-telephone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by AllPhoto. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>

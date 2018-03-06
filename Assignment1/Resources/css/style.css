@@ -1,0 +1,610 @@
+/*  ======================================================================================================= 
+grey background: #ededed
+
+grey hover color: #cccccc
+grey link color: #484848
+
+footer text color: #f2f2f2
+footer bacckground color: #676767
+
+ ==== General stuff =================================================================================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+html {
+    color: #484848;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text-box{
+    text-align: center;
+    left: 20%;
+    margin-bottom: 2%;
+}
+
+.img-2-2 {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 0 1% 1% 0;
+}
+
+.scale-up-1-1 li:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.scale-up-1-2 li:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+.scale-up-1-3 li:hover {
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.nav-buffer {
+    height: 11vh;
+}
+
+.text-center-align {
+    text-align: center;
+}
+
+
+.slide {
+    display: none;
+}
+
+.slide:first-of-type{
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto 10px;
+}
+
+td, th {
+    border: 1px solid #ededed;
+    text-align: left;
+    padding: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+/*  Header =============================================================================================================== */
+
+#index {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-text-box {
+    width: 70%;
+    text-align: center;
+    margin: 20% auto 0 auto;
+    color: white;
+}
+
+header h2 {
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+
+header p {
+    font-size: 110%;
+    width: 60%;
+    position: absolute;
+    left: 20%
+}
+/*  ==== Logo ================================================================================================================================== */
+
+.logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin: 2% 0 0 8%;
+}
+
+.logo-small {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+.logo-small-scroll {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 1% 0 1% 1%;
+    
+}
+
+/* Buttons ======================================================================================================================== */
+.btn-icon {
+    background-color: white;
+    border: none;
+    color: #e0e0e0;
+    font-size: 180%;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 11px 14px;
+    margin: 0 2% 2% 0;
+    transition: .3s;
+}
+.btn-icon:hover {
+    background-color: #cacacb;
+    transform: scale(1.2);
+}
+
+.active {
+    background-color: royalblue;
+    color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.active:hover {
+    background-color: royalblue;
+    transform: scale(1.1);
+}
+
+
+/* navigation bar =================================================================================================================== */
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    text-align: center;
+    margin: 30px 0 0 30px;
+    transition: .2s;
+}
+
+.main-nav li:hover {
+    transform: scale(1.1);
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    color: white;
+    margin: 0 10px;
+    padding-bottom: 4px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color:#cccccc;
+    transition: .2s;
+}
+
+.scroll-nav {
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    box-shadow: 10px 0 15px #676767;
+    z-index: 1;
+}
+
+
+.scroll-nav-ul {
+    float: right;
+}
+
+.scroll-nav li {
+    display: inline-block;
+    text-align: center;
+    margin: 30px 0 0 30px;
+    transition: .2s;
+    padding-bottom: 3%;
+}
+
+.scroll-nav li a:link,
+.scroll-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #484848;
+    margin: 0 10px;
+    padding-bottom: 4px;
+}
+
+.scroll-nav li a:hover,
+.scroll-nav li a:active {
+    color:#cccccc;
+    transition: .2s;
+}
+
+.nav-header {
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 10px 0 15px #676767;
+    z-index: 1;
+}
+
+.nav-header li {
+    display: inline-block;
+    text-align: center;
+    margin: 30px 0 0 30px;
+    transition: .2s;
+    padding-bottom: 3%;
+}
+
+.nav-header li a:link,
+.nav-header li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #484848;
+    margin: 0 10px;
+    padding-bottom: 4px;
+}
+
+.nav-header li a:hover,
+.nav-header li a:active {
+    color:#cccccc;
+    transition: .2s;
+}
+
+/*  Footer ==================================================================================================================== */
+
+footer {
+    background-color: #676767;
+    font-size: 80%;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 1% 0;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li {
+    margin: 0 5% 3% 0;
+    text-align: center;
+    display: inline-block;
+}
+
+footer li a:link,
+footer li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer li a:hover,
+footer li a:active {
+    color: #cccccc;
+}
+
+footer i {
+    font-size: 200%;
+    display: inline-block;
+    margin: 0 8% 0 0%;
+}
+
+footer p {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 80%;
+}
+
+#twitter:hover,
+#twitter:active {
+    color: #55acee;
+}
+
+#facebook:hover,
+#facebook:active {
+    color: #3b5998;
+}
+
+#linkedin:hover,
+#linkedin:active {
+    color: #007bb5;
+}
+
+#insta:hover,
+#insta:active {
+    color: #e95950;
+}
+
+#youtube:hover,
+#youtube:active {
+    color: #ff0000;
+}
+
+
+/*   Column ========================================================================================== */
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.5%;
+}
+
+.col-1-1 {
+    width: 100%;
+}
+
+.col-1-2 {
+    width: 48%;
+}
+
+.col-1-3 {
+    width: 32%;
+}
+
+.col-2-3 {
+    width: 65%;
+}
+
+.col-2-3 h2 {
+    margin-bottom: 1.5%;
+}
+
+.col-2-3 p {
+    
+}
+
+.col-1-4 {
+    width: 23%;
+}
+
+.col-1-5{
+    width: 18%;
+}
+
+.col-3-5 {
+    width: 57%;
+}
+
+
+/* How it works ====================================================================================================================== */
+
+
+.how-it-works-sec {
+    background-color: #ededed;
+    padding: 2% 0;
+    height: 60vh;
+}
+
+.how-it-works-sec row {
+    text-align: center;
+}
+
+.connect-div {
+    display: none;
+}
+
+.connect-div h2 {
+    margin-bottom: 2%;
+}
+.connect-div img {
+    width: 80%;
+    padding-left: 30%;
+}
+
+.calendar-div h2 {
+    margin-bottom: 2%;
+}
+
+.calendar-div img {
+    width: 80%;
+    padding-left: 30%;
+}
+
+.shoot-div {
+    display: none;
+}
+
+.shoot-div h2 {
+    margin-bottom: 2%;
+}
+
+.shoot-div img {
+    width: 80%;
+    padding-left: 30%;
+}
+
+.share-div {
+    display: none;
+}
+
+.share-div h2 {
+    margin-bottom: 2%;
+}
+
+.share-div img {
+    width: 95%;
+    padding-left: 30%;
+}
+
+/*  Pricing ============================================================================================================== */
+
+.pricing-sect {
+    height: 70vh;
+    padding: 2% 0;
+}
+
+.pricing-sect row {
+    text-align: center;
+}
+
+.pricing-sect h2 {
+    margin-bottom: 2%;
+}
+
+/*  Gallerie ============================================================================================================= */
+
+#slideshow {
+    height: 100%;
+    width: 100vw;
+}
+
+.slideshow-container {
+    width: 100%;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    top: 45%;
+    position: absolute;
+    width: auto;
+    margin: 0 0 0 0;
+    z-index: 1;
+    color: #000;
+    font-weight: bold;
+    font-size: 180%;
+    transition: 0.4s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .prev:active 
+.next:hover, .next:active {
+    transform: scale(1.4);
+}
+
+.prev {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+.circle {
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #cccccc;
+    transition: .2s;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+
+.video-box  video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-box {
+    padding: 4% 3%;
+    width: 70%;
+    margin: 1% auto 0 auto;
+}
+
+.gallery col col-1-4 {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    padding: 2%;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+}
+
+.picture-frame {
+    padding: 0 5px;
+    float: left;
+    width: 24.5%;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width:752px) {
+    .picture-frame {
+        width: 49%%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .picture-frame {
+        width: 100%;
+    }
+}
+    
+/* Contact ================================================================================================================ */
+    
+.contact-info h2, h3, p{
+    margin-bottom: 15px;
+}
+
+.about-info h2, h3, p{
+    margin-bottom: 15px;
+}
+
+.faq-info h2, h3, p {
+    margin-bottom: 15px;
+}

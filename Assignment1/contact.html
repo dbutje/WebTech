@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Resources/css/style.css">
+        <link rel="stylesheet" href="Resources/css/ionicons.min.css">
+        <title>Gallerie</title>
+        <script src="Resources/js/jquery-3.3.1.js"></script>
+        <script src="Resources/js/slideshow.js"></script>
+    </head>
+
+    <body>
+        <header class="nav-header">
+            <a href="index.html" class="logo-img"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo-small-scroll"></a>
+            <div class="row">
+                <ul class="scroll-nav-ul">
+                    <li><a href="index.html#how-it-works">How it works</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="nav-buffer"></div>
+        
+        <section id="slideshow">
+            <div class="slideshow-container row">
+                <div class="slide fade">
+                    <img src="/Resources/img/photographer.jpg" alt="Picture of a photographer" id="img-1">  
+                </div>
+                <div class="slide fade">
+                    <img src="/Resources/img/photographer2.jpg" alt="Picture of a photographer" id="img-1">  
+                </div>
+
+                <a class="prev" onclick="nextSlide(-1)" id="prev">&#10094;</a>
+                <a class="next" onclick="nextSlide(1)" id="next">&#10095;</a>
+            </div>
+            <div class="text-center-align">
+                <span class="circle" onclick="currentSlide(1)"></span>
+                <span class="circle" onclick="currentSlide(2)"></span>
+                <span class="circle" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        
+        <section>
+            <div class="row text-box contact-info">
+                <div>
+                    <h2>Contact</h2>
+                    <p>We are located on Tafelbergdreef 148, 3564 AD Utrecht.</p>
+                    <h3>Amsterdam</h3>
+                    <p>
+                        When travelling from Amsterdam you take the A2 and leave at exit 6-8 at Maarssen. You take the N230 and leave on the second roundabout to the Einsteindreef, from there you take the right exit to Oranjerivierdreef and then the first left to Kasaidreef. Then you take a left to the Klipspringdreef and continue this road to come to Tafelbergdreef.
+                    </p>
+                    <h3>Public transport</h3>
+                    <p>
+                        If you come with the Public Transportation (OV) you must go to Utrecht Centraal and take Bus 1,3 or 6 with destination Overvecht. You can also take the train to Utrecht Overvecht and take Bus 1 or 11 with destination Overvecht/Leidsche Rijn. In every occasion you get out at Zamenhofdreef and walk away from the shopping mall.
+                        <br><br>
+                        If you have any questions or comments you can check the FAQ or contact us.
+                        Email: contact@butjephotos.nl 
+                        Phone: 0636354767
+                        Address: Tafelbergdreef 148
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col col-1-5">
+                        <a href="index.html"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo-small"></a>
+                </div>
+                <div class="col col-3-5">
+                    <ul>
+                        <li><a href="gallerie.html">Gallerie</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#how-it-works">How it works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col col-1-5">
+                    <ul class="scale-up-1-3">
+                        <li><a href="#" id="twitter"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#" id="facebook"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" id="linkedin"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="#" id="insta"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#" id="youtube"><i class="ion-social-youtube"></i></a></li>
+                        <li><a href="#"><i class="ion-email"></i></a></li>
+                        <li><a href="#"><i class="ion-ios-telephone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by AllPhoto. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Resources/css/style.css">
+        <link rel="stylesheet" href="Resources/css/ionicons.min.css">
+        <title>AllPhoto</title>
+        <script src="Resources/js/jquery-3.3.1.js"></script>
+        <script>
+$(document).ready(function(){
+    $("#btn-calendar").click(function(){
+        $("#calendar-div").show();
+        $("#connect-div").hide();
+        $("#shoot-div").hide();
+        $("#share-div").hide();
+        $(this).addClass('active');
+        $("#btn-connect").removeClass('active');
+        $("#btn-shoot").removeClass('active');
+        $("#btn-share").removeClass('active');
+    });
+    $("#btn-connect").click(function(){
+        $("#calendar-div").hide();
+        $("#connect-div").show();
+        $("#shoot-div").hide();
+        $("#share-div").hide();
+        $(this).addClass('active');
+        $("#btn-calendar").removeClass('active');
+        $("#btn-shoot").removeClass('active');
+        $("#btn-share").removeClass('active');
+    });
+     $("#btn-shoot").click(function(){
+        $("#calendar-div").hide();
+        $("#connect-div").hide();
+        $("#shoot-div").show();
+        $("#share-div").hide();
+        $(this).addClass('active');
+        $("#btn-connect").removeClass('active');
+        $("#btn-calendar").removeClass('active');
+        $("#btn-share").removeClass('active');
+    });
+     $("#btn-share").click(function(){
+        $("#calendar-div").hide();
+        $("#connect-div").hide();
+        $("#shoot-div").hide();
+        $("#share-div").show();
+        $(this).addClass('active');
+        $("#btn-connect").removeClass('active');
+        $("#btn-shoot").removeClass('active');
+        $("#btn-calendar").removeClass('active');
+    });
+    $(window).scroll(function(){
+        var hT = $("#how-it-works").offset().top,
+            hH = $('#how-it-works').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if /*(wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){*/(wS > hT){
+           $("#scroll-nav").slideDown();
+       }
+        if (wS < hT){
+            $("#scroll-nav").slideUp();
+        }
+    })
+});
+
+</script>
+    </head>
+
+    <body>
+        <header id="index">
+            <a href="index.html" class="logo-img"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo"></a>
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="index.html#how-it-works">How it works</a></li>
+                        <li><a href="gallerie.html">Gallerie</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-text-box">
+                <h2>
+                    Get a great photographer for every occasion
+                </h2>
+                <p>
+                    A perfect documentation of any occasion is withing reach! Our wide range of photographers, you can get a perfect photo of every kind of event. Just specify what you want, and we will pair you up with the perfect photographer for your needs.
+                </p>
+            </div>
+        </header>
+        
+        <section class="scroll-nav" id="scroll-nav">
+            <a href="index.html" class="logo-img"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo-small-scroll"></a>
+            <div class="row">
+                <ul class="scroll-nav-ul">
+                    <li><a href="index.html#how-it-works">How it works</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="how-it-works-sec" id="how-it-works">
+            <div class="text-box">
+                <h2>How it works</h2>          
+            </div>
+            <div class="row" style="text-align: center">
+                <button class="btn-icon active" id="btn-calendar"><i class="ion-calendar"></i></button>
+                <button class="btn-icon" id="btn-connect"><i class="ion-person-stalker"></i></button>
+                <button class="btn-icon" id="btn-shoot"><i class="ion-ios-camera"></i></button>
+                <button class="btn-icon" id="btn-share"><i class="ion-share"></i></button>
+            </div>
+            <div class="calendar-div" id="calendar-div">
+                <div class="row">
+                    <div class="col col-1-2">
+                        <h2>Pick a date and location</h2>
+                        <p>
+                            Pick a date and location and we will show you all the photographers that are available.
+                        </p>
+                    </div>
+                    <div class="col col-1-2">
+                        <img src="Resources/img/photographer.jpg" alt="Picture of a photographer">
+                    </div>
+                </div>
+            </div>
+            <div class="connect-div" id="connect-div">
+                <div class="row">
+                    <div class="col col-1-2">
+                        <h2>Get connected with the perfect photographer for your shoot</h2>
+                        <p>
+                            There are multiple types of shoots available, including but not limited to: Wedding, Model, Product and wildlife. <br> Every photographer has his/her own specialisation, and we will make sure that the right photographer will handle your photoshoot.
+                        </p>
+                    </div>
+                    <div class="col col-1-2">
+                        <img src="Resources/img/photographer2.jpg" alt="Picture of a photographer">
+                    </div>
+                </div>
+            </div>
+            <div class="shoot-div" id="shoot-div">
+                <div class="row">
+                    <div class="col col-1-2">
+                        <h2>Enjoy the shoot</h2>
+                        <p>
+                            Our photographers will make sure that all of your expectations are met. They are trained proffessionals that are licenced to shoot. They will be able to take every picture that needs to be taken.
+                        </p>
+                    </div>
+                    <div class="col col-1-2">
+                        <img src="Resources/img/wedding-2.jpg" alt="Picture of a wedding">
+                    </div>
+                </div>
+            </div>
+            <div class="share-div" id="share-div">
+                <div class="row">
+                    <div class="col col-1-2">
+                        <h2>Share your pictures</h2>
+                        <p>
+                            You are able to download all your pictures fully edited as a online gallery. Be sure to share the amazing pictures with all your friends, family and whoever would like to see them.
+                        </p>
+                    </div>
+                    <div class="col col-1-2">
+                        <img src="Resources/img/gallery.png" alt="Picture of gallerie">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing-sect" id="pricing">
+            <div class="row text-box">
+                <h2>What does it all cost</h2>
+                <p>
+                    There are different price ranges if you want to hire one of our photographers you have different options. In this table you can see the prices we ask for our services.</p>
+                <table>
+                    <tr>
+                        <th>Location/Duration</th>
+                        <th>1 Hour</th>
+                        <th>2 Hours</th>
+                    </tr>
+                    <tr>
+                        <td>On Site</td>
+                        <td>&euro;60</td>
+                        <td>&euro;100</td>
+                    </tr>
+                    <tr>
+                        <td>location &#10094; 25 km from us</td>
+                        <td>&euro;90</td>
+                        <td>&euro;150</td>
+                    </tr>
+                    <tr>
+                        <td>location 25-50 km from us</td>
+                        <td>&euro;120</td>
+                        <td>&euro;180</td>
+                    </tr>   
+                </table>
+                
+                <p>
+                    These are the most common prices we offer. If you want to shoot on a location which is further away or for a longer period you can get a quotation from us. If you are interested in our services you can contact us at contact@butjephotos.nl.
+                </p>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col col-1-5">
+                        <a href="index.html"><img src="Resources/img/logo.png" alt="AllPhoto logo" class="logo-small"></a>
+                </div>
+                <div class="col col-3-5">
+                    <ul>
+                        <li><a href="gallerie.html">Gallerie</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="index.html#how-it-works">How it works</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col col-1-5">
+                    <ul class="scale-up-1-3">
+                        <li><a href="#" id="twitter"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#" id="facebook"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#" id="linkedin"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="#" id="insta"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#" id="youtube"><i class="ion-social-youtube"></i></a></li>
+                        <li><a href="#"><i class="ion-email"></i></a></li>
+                        <li><a href="#"><i class="ion-ios-telephone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 by AllPhoto. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>
